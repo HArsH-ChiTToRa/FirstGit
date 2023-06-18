@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <title>Booking Appointment</title>
 </head>
-<body>
+<body id="bd">
     <header id="main-header" class="bg-success text-white p-4 mb-3">
         <div class="container">
           <div class="row">
@@ -17,13 +17,15 @@
            </div>
         </div>
     </header>
-    <div class="container">
+    <div class="container" id="dv">
         <div id="main" class="card card-body">
             <form id="addForm">
                 <label for = 'name'>Name</label><br>
-                <input type="text" class="form-control mr-2" id="name"><br>
+                <input type="text" class="form-control mr-2" id="name" required><br>
                 <label for = "email">Email</label><br>
-                <input type="email" class="form-control mr-2" id="email"><br>
+                <input type="email" class="form-control mr-2" id="email" required><br>
+                <label for = "tel"> Phone No</label>
+                <input type = "tel" class = "form-control mr-2" id="phone"><br>
                 <input type="submit" class="btn btn-dark" value="Submit">
             </form>
         </div>
