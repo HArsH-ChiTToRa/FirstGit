@@ -16,10 +16,16 @@ function store(e){
 
     var li = document.createElement('li');
     li.className = "list-group-item";
+    //li.mail = mail;
     li.appendChild(document.createTextNode(myObj.Name+"-"+myObj.Email+"-"+myObj.Phone));
+    var Delete = document.createElement('button');
+    Delete.className = 'delete';
+    Delete.appendChild(document.createTextNode("Delete"));
+    li.appendChild(Delete);
     Div.appendChild(li);
+    // var Remove = document.getElementById('dv');
+    // Remove.addEventListener('click', removeDetails);
+
 }
-
-
 
 

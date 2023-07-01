@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Adavnce Javascript</title>
+    </head>
+    <body>
+        <button id="clicked">Click Me</button>
+        <script>
+            function outerfunction(){
+                console.log(a);
+                var a=10;
+                innerfunction();
+                function innerfunction(){
+                    console.log(a);
+                    console.log(window.a);
+                    console.log(this.a);
+                }
+            }
+            // var a=7;
+            // var b=3;
+            outerfunction();
+            var a=7;
+            var b=3;
+        </script>
+    </body>
+</html>

@@ -22,8 +22,6 @@ function store(e){
     Delete.appendChild(document.createTextNode("Delete"));
     li.appendChild(Delete);
     Div.appendChild(li);
-    var Remove = document.getElementById('dv');
-    Remove.addEventListener('click', removeDetails);
 
 }
 

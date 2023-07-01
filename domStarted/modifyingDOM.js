@@ -22,3 +22,5 @@ itemLister1.insertBefore(newDiv1, title1);
 
 
 console.log(newDiv);
+console.log(newDiv.parentElement);
+console.log(newDiv.parentChild);
