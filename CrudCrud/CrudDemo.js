@@ -38,13 +38,13 @@ Remove.addEventListener('click', Details);
 
 function Details(e){
     if(e.target.classList.contains('delete')){
-        localStorage.removeItem(e.target.parentElement.mail);
+        //localStorage.removeItem(e.target.parentElement.mail);
         var x = e.target.parentElement;
         Div.removeChild(x);
         
     }
     else if(e.target.classList.contains('edit')){
-        localStorage.removeItem(e.target.parentElement.mail);
+        //localStorage.removeItem(e.target.parentElement.mail);
         (document.getElementById('name')).value = e.target.parentElement.name;
         (document.getElementById('email')).value = e.target.parentElement.mail;
         (document.getElementById('phone')).value = e.target.parentElement.phone;
