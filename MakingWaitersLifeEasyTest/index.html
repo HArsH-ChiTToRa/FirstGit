@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <title>JavaScript Test 2</title>
+    </head>
+    <body>
+        <form id="form">
+            <label for="price">Choose price:</label>
+            <input type="number", id="price" required>
+            <label for="dish">Choose dish:</label>
+            <input type="text" id="dish" required>
+            <label for="table">Choose table:</label>
+            <select id="table" required>
+                <option>Table 1</option>
+                <option>Table 2</option>
+                <option>Table 3</option>
+            </select>
+            <button type="submit" class="btn btn-dark">SUBMIT</button>
+        </form>
+        <h2 style="color:blue" id="order">ORDERS</h2>
+        <ul class="list-group" id="cls">
+            <li class="list-group-item"><h3 style="color:red" id="table1">Table 1</h3></li>
+            <li class="list-group-item"><h3 style="color:red" id="table2">Table 2</h3></li>
+            <li class="list-group-item"><h3 style="color:red" id="table3">Table 3</h3></li>
+        </ul>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+        <script src="waiter.js"></script>
+    </body>
+</html>
